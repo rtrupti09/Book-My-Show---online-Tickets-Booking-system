@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMyShow</title>
+  <link rel="icon" type="image/png" href="Images/my.jpg">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <style>
+      .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #e72b38;
+    }
+
+    .nav-link {
+      color: #000;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #e72b38;
+    }
+
+    .search-bar {
+      max-width: 300px;
+      width: 100%;
+    }
+    .btn1{
+        background-color: #ff3333;
+        width: 80px;
+        border: none;
+        padding: 6px;
+        border-radius: 0.5rem;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .btn1-signin {
+      background-color: #e72b38;
+      color: #fff;
+      text-align: center;
+    }
+
+    .btn1-signin:hover {
+      background-color: #d22632;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    /* Small screen adjustments */
+    @media (max-width: 991px) {
+      .navbar-brand img {
+        height: 30px;
+      }
+    }
+
+    /* Media Query for Tablet (768px and below) */
+@media (max-width: 768px) {
+  /* Adjust card size */
+  .event-card {
+    width: 100%; /* Make each card take up full width */
+    margin-bottom: 15px; /* Add some spacing between cards */
+  }
+
+  /* Adjust the text size for event titles and descriptions */
+  .event-title {
+    font-size: 0.9rem; 
+  }
+
+  .card-body {
+    padding: 10px; 
+  }
+
+ 
+  .btn {
+    width: 10px; 
+    font-size: 12px;
+  }
+
+  
+  .container {
+    width: 100%; 
+  }
+}
+
+    /* footer */
+.footer {
+            background-color: #000;
+            color: #fff;
+        }
+        .footer a {
+            color: #ff3333;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-links a {
+            font-size: 1.5rem;
+            color: #ff3333;
+        }
+        .social-links a {
+            color: #fff;
+        }
+        .footer h5 {
+            color: #ff3333;
+        }
+        .footer .phone {
+            color: #ff3333;
+        }
+        .footer .para{
+          color: #ff3333;
+        }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="Images/BookMyshowlogo.png" alt="BookMyShow Logo">
+          </a>
+    
+          <!-- Toggler Button for Small Screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Navbar Content -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Navigation Links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="movies.html">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="stream.html">Streams</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="plays.html">Plays</a>
+              </li>
+            </ul>
+    
+            <!-- Search Bar -->
+            <form class="d-none d-lg-flex mb-2 mb-lg-0 search-bar">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search for Movies, Events, Plays"
+                aria-label="Search"
+              >
+            </form>
+    
+            <!-- Sign In and Login Buttons -->
+            <div class="d-flex">
+              <a href="signin.html" class="btn1 btn1-signin me-2">Sign In</a>
+              <a href="login.html" class="btn1 btn1-signin">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+   <!-- Hero Section -->
+   <div class="container mt-4">
+    <div class="text-center mb-5">
+      <h1>Discover Amazing Events</h1>
+      <p class="lead">Book tickets for concerts, movies, shows, and more!</p>
+    </div>
+  </div>
+
+  <!-- Events Grid -->
+  <div class="container">
+    <div class="row g-4" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      <!-- Event Card -->
+       <div><h1 style="font-size: 30px; font-weight: bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Musical Events</h1></div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="card event-card shadow-lg">
+            <!-- Larger Image Section -->
+            <img 
+              src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-kailash-kher-kailasa-live-0-2024-10-20-t-5-50-47.jpg" 
+              class="card-img-top" 
+              alt="Event 1" 
+              style=" object-fit: contain;">
+            <!-- Details Section -->
+            <div class="card-body text-center" >
+              <h5 class="event-title" style="font-size: 0.8rem;">Kailash Kher Live    </h5>
+              <p class="text-muted" style="font-size: 0.8rem; ">Bollywood, Sufi | Hindi</p>
+              <button 
+                class="btn w-75" 
+                style="background-color: #ea5050; color: white; border: none;">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      <!-- Duplicate Event Cards -->
+      <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="card event-card shadow-lg">
+            <!-- Larger Image Section -->
+            <img 
+              src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-sunburn-arena-ft-boris-brejcha-0-2024-11-20-t-13-34-7.jpg" 
+              class="card-img-top" 
+              alt="Event 1" 
+              style=" object-fit: contain;">
+            <!-- Details Section -->
+            <div class="card-body text-center">
+              <h5 class="event-title" style="font-size: 0.8rem;">Boris Brejcha</h5>
+              <p class="text-muted" style="font-size: 0.8rem;">EDM | English | 15yrs+</p>
+              <button 
+                class="btn w-75" 
+                style="background-color: #ea5050; color: white; border: none;">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="card event-card shadow-lg">
+            <!-- Larger Image Section -->
+            <img 
+              src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-one-night-feat-anuv-jain-lucky-ali-dj-chetas-0-2024-11-26-t-6-48-10.jpg" 
+              class="card-img-top" 
+              alt="Event 1" 
+              style=" object-fit: contain;">
+            <!-- Details Section -->
+            <div class="card-body text-center" >
+              <h5 class="event-title" style="font-size: 0.8rem;">One Night </h5>
+              <p class="text-muted" style="font-size: 0.8rem; ">Indie, Pop | Hindi | 18yrs 
+              </p>
+              <button 
+                class="btn w-75" 
+                style="background-color: #ea5050; color: white; border: none;">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="card event-card shadow-lg">
+            <!-- Larger Image Section -->
+            <img 
+              src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-piyush-mishra-udankhatola-tour-thane-0-2024-11-22-t-7-28-9.jpg" 
+              class="card-img-top" 
+              alt="Event 1" 
+              style=" object-fit: contain;">
+            <!-- Details Section -->
+            <div class="card-body text-center" >
+              <h5 class="event-title" style="font-size: 0.8rem;">UdanKhatola Tour-Thane</h5>
+              <p class="text-muted" style="font-size: 0.8rem; ">Bollywood, Indie, Pop </p>
+              <button 
+                class="btn w-75" 
+                style="background-color: #ea5050; color: white; border: none;">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- comdey shows -->
+    <div class="row g-4" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 25px;">
+      <!-- Event Card -->
+       <div><h1 style="font-size: 30px; font-weight: bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Comdey Shows</h1></div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="card event-card shadow-lg">
+            <!-- Larger Image Section -->
+            <img 
+              src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-kisi-ko-batana-mat-ft-anubhav-singh-bassi-0-2024-10-24-t-10-7-21.jpg" 
+              class="card-img-top" 
+              alt="Event 1" 
+              style=" object-fit: contain;">
+            <!-- Details Section -->
+            <div class="card-body text-center">
+              <h5 class="event-title" style="font-size: 0.8rem;">Kisi Ko Batana Mat</h5>
+              <p class="text-muted" style="font-size: 0.8rem;">Comedy | Hindi | 16yrs +</p>
+              <button 
+                class="btn w-75" 
+                style="background-color: #ea5050; color: white; border: none;">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+     
+      <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="card event-card shadow-lg">
+            <!-- Larger Image Section -->
+            <img 
+              src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-relationshit-advice-raunaq-rajani-0-2024-11-2-t-4-35-47.jpg" 
+              class="card-img-top" 
+              alt="Event 1" 
+              style=" object-fit: contain;">
+            <!-- Details Section -->
+            <div class="card-body text-center">
+              <h5 class="event-title" style="font-size: 0.8rem;">RelationShit Advice</h5>
+              <p class="text-muted" style="font-size: 0.8rem; ">Comedy | English, Hindi </p>
+              <button 
+                class="btn w-75" 
+                style="background-color: #ea5050; color: white; border: none;">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="card event-card shadow-lg">
+            <!-- Larger Image Section -->
+            <img 
+              src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-aces-of-spades-stand-up-comedy-0-2024-2-5-t-13-34-42.jpg" 
+              class="card-img-top" 
+              alt="Event 1" 
+              style=" object-fit: contain;">
+            <!-- Details Section -->
+            <div class="card-body text-center">
+              <h5 class="event-title" style="font-size: 0.8rem; margin-top: 3px ;">Aces of Spades: Stand-Up </h5>
+              <p class="text-muted" style="font-size: 0.8rem; ">Comedy | 2hr | Hindi</p>
+              <button 
+                class="btn w-75" 
+                style="background-color: #ea5050; color: white; border: none;">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="card event-card shadow-lg">
+            <!-- Larger Image Section -->
+            <img 
+              src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-back-bencher-by-pranit-more-0-2024-6-24-t-12-46-25.jpg" 
+              class="card-img-top" 
+              alt="Event 1" 
+              style=" object-fit: contain;">
+            <!-- Details Section -->
+            <div class="card-body text-center">
+              <h5 class="event-title" style="font-size:0.8rem; margin-top: 3px;">Back Bencher - Pranit More</h5>
+              <p class="text-muted" style="font-size: 0.8rem;">Comedy | Hindi 
+              </p>
+              <button 
+                class="btn w-75" 
+                style="background-color: #ea5050; color: white; border: none;">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- kids Shows -->
+    <div class="row g-4" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 25px; margin-bottom: 30px;">
+      <!-- Event Card -->
+       <div><h1 style="font-size: 30px; font-weight: bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Kids Shows</h1></div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="card event-card shadow-lg">
+            <!-- Larger Image Section -->
+            <img 
+              src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-rambo-circus-mumbai-1-2024-10-8-t-17-1-18.jpg" 
+              class="card-img-top" 
+              alt="Event 1" 
+              style=" object-fit: contain;">
+            <!-- Details Section -->
+            <div class="card-body text-center" >
+              <h5 class="event-title" style="font-size: 0.8rem;">Rambo Circus - Borivali</h5>
+              <p class="text-muted" style="font-size: 0.8rem; ">Circus | Hindi 
+              </p>
+              <button 
+                class="btn w-75" 
+                style="background-color: #ea5050; color: white; border: none;">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      <!-- Duplicate Event Cards -->
+      <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="card event-card shadow-lg">
+            <!-- Larger Image Section -->
+            <img 
+              src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-tickets-museum-of-solutions-1-2024-3-5-t-11-15-56.jpg" 
+              class="card-img-top" 
+              alt="Event 1" 
+              style=" object-fit: contain;">
+            <!-- Details Section -->
+            <div class="card-body text-center">
+              <h5 class="event-title" style="font-size: 0.8rem;">Museum of Solutions</h5>
+              <p class="text-muted" style="font-size: 0.8rem; ">Entertainment | 3yrs</p>
+              <button 
+                class="btn w-75" 
+                style="background-color: #ea5050; color: white; border: none;">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="card event-card shadow-lg">
+            <!-- Larger Image Section -->
+            <img 
+              src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-kidzworld-expo-2024-1-2024-9-5-t-9-18-29.jpg" 
+              class="card-img-top" 
+              alt="Event 1" 
+              style=" object-fit: contain;">
+            <!-- Details Section -->
+            <div class="card-body text-center" >
+              <h5 class="event-title" style="font-size: 0.8rem;">Kidzworld Expo 2024</h5>
+              <p class="text-muted" style="font-size: 0.8rem;">Entertainment | 2hrs</p>
+              <button 
+                class="btn w-75" 
+                style="background-color: #ea5050; color: white; border: none;">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="card event-card shadow-lg">
+            <!-- Larger Image Section -->
+            <img 
+              src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-kukdukoo-fest-mumbai-0-2024-10-23-t-7-32-9.jpg" 
+              class="card-img-top" 
+              alt="Event 1" 
+              style=" object-fit: contain;">
+            <!-- Details Section -->
+            <div class="card-body text-center">
+              <h5 class="event-title" style="font-size: 0.8rem;">Kukdukoo Fest Mumbai</h5>
+              <p class="text-muted" style="font-size: 0.8rem; ">Entertainment</p>
+              <button 
+                class="btn w-75" 
+                style="background-color: #ea5050; color: white; border: none;">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- footer section -->
+  <footer class="footer pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-light">About BookMyShow</h5>
+                <p class="para">BookMyShow is your go-to platform for booking tickets for movies, events, and more.</p>
+            </div>
+                <!-- Contact Section -->
+                <div class="col-md-4 mb-3">
+                  <h5 class="text-light">Contact Us</h5>
+                  <p>Email: <a href="mailto:support@bookmyshow.com">support@bookmyshow.com</a></p>
+                  <p >Phone: <span class="phone">+91 7821947552</span> </p>
+                  <div class="social-links">
+                      <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                      <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+              </div>
+            <!-- Quick Links Section -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-light">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        
+        </div>
+        <hr class="bg-light">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2025 BookMyShow. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+  
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>
+</html>

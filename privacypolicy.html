@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMyShow</title>
+  <link rel="icon" type="image/png" href="Images/my.jpg">
+  <!-- Bootstrap CSS -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+>  <style>
+    /* General Styles */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #e72b38;
+    }
+
+    .nav-link {
+      color: #000;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #e72b38;
+    }
+
+    .search-bar {
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .btn-signin {
+      background-color: #e72b38;
+      color: #fff;
+    }
+
+    .btn-signin:hover {
+      background-color: #d22632;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    /* Small screen adjustments */
+    @media (max-width: 991px) {
+      .navbar-brand img {
+        height: 30px;
+      }
+    }
+
+/* Apply padding to the container for all screen sizes */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2, h3 {
+  color: #ff3333;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+.text-dan{
+ color: #ff3333;
+ font: bold;
+}
+
+/* Header and Footer Styling */
+header, footer {
+  background-color: #ff3333;
+}
+
+footer p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+  /* footer */
+  .footer {
+            background-color: #000;
+            color: #fff;
+        }
+        .footer a {
+            color: #ff3333;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-links a {
+            font-size: 1.5rem;
+            color: #ff3333;
+        }
+        .social-links a {
+            color: #fff;
+        }
+        .footer h5 {
+            color: #ff3333;
+        }
+        .footer .phone {
+            color: #ff3333;
+        }
+        .footer .para{
+          color: #ff3333;
+        }
+
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="Images/BookMyshowlogo.png" alt="BookMyShow Logo">
+          </a>
+    
+          <!-- Toggler Button for Small Screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Navbar Content -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Navigation Links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="movies.html">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="stream.html">Streams</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="plays.html">Plays</a>
+              </li>
+            </ul>
+    
+            <!-- Search Bar -->
+            <form class="d-none d-lg-flex mb-2 mb-lg-0 search-bar">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search for Movies, Events, Plays"
+                aria-label="Search"
+              >
+            </form>
+    
+            <!-- Sign In and Login Buttons -->
+            <div class="d-flex">
+              <a href="signin.html" class="btn btn-signin me-2">Sign In</a>
+              <a href="login.html" class="btn btn-signin">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+      <h1 style="text-align: center; margin-top: 20px"><strong>Privacy Policy</strong></h1>
+    </div>
+
+  <main class="container py-5">
+    <section class="content">
+      <h2 class="text-dan">Introduction</h2>
+      <p>Welcome to BookMyShow. We value your privacy and are committed to protecting your personal information. By using our services, you agree to the collection and use of your information as outlined in this policy.</p>
+
+      <h2 class="text-dan">Information We Collect</h2>
+      <p>We collect personal information that you provide to us when using our services, such as your name, email address, phone number, payment details, and browsing activity. This helps us provide a personalized experience for you.</p>
+
+      <h2 class="text-dan">How We Use Your Information</h2>
+      <p>Your personal information helps us process bookings, provide customer support, send notifications, and improve our services. We may also use your data to send promotional content relevant to you.</p>
+
+      <h2 class="text-dan">Data Sharing</h2>
+      <p>We do not sell or rent your personal information to third parties. However, we may share data with trusted partners for processing payments, delivering services, or other business purposes in compliance with applicable laws.</p>
+
+      <h2 class="text-dan">Data Security</h2>
+      <p>We take reasonable precautions to protect your data from unauthorized access, alteration, disclosure, or destruction. These include encryption, secure storage, and access control protocols.</p>
+
+      <h2 class="text-dan">Cookies</h2>
+      <p>We use cookies to improve user experience, analyze traffic, and provide personalized content and advertisements. You can manage your cookie preferences through your browser settings.</p>
+
+      <h2 class="text-dan">Children's Privacy</h2>
+      <p>Our services are not intended for children under the age of 13. We do not knowingly collect personal information from children. If we discover that we have unintentionally collected information from a child, we will take steps to delete it.</p>
+
+      <h2 class="text-dan">Your Rights</h2>
+      <p>You have the right to access, update, or delete your personal data. You may also withdraw your consent at any time by contacting us. If you believe your privacy rights have been violated, please reach out to us for assistance.</p>
+
+      <h2 class="text-dan">Third-Party Links</h2>
+      <p>Our website may contain links to external websites. We are not responsible for the privacy practices or the content of third-party websites. We encourage you to review their privacy policies before providing any personal information.</p>
+
+      <h2 class="text-dan">Changes to this Privacy Policy</h2>
+      <p>We may update this privacy policy from time to time. Any changes will be posted on this page with the updated date. Please check periodically for any updates.</p>
+
+      <h2 class="text-dan">Contact Us</h2>
+      <p>If you have any questions or concerns regarding our privacy policy, please contact us at support@bookmyshow.com.</p>
+    </section>
+  </main>
+
+  <!-- footer section -->
+  <footer class="footer pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-light">About BookMyShow</h5>
+                <p class="para">BookMyShow is your go-to platform for booking tickets for movies, events, and more.</p>
+            </div>
+                <!-- Contact Section -->
+                <div class="col-md-4 mb-3">
+                  <h5 class="text-light">Contact Us</h5>
+                  <p>Email: <a href="mailto:support@bookmyshow.com">support@bookmyshow.com</a></p>
+                  <p >Phone: <span class="phone">+91 7821947552</span> </p>
+                  <div class="social-links">
+                      <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                      <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+              </div>
+            <!-- Quick Links Section -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-light">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        
+        </div>
+        <hr class="bg-light">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2025 BookMyShow. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+  
+  <!-- Bootstrap JS (Optional) -->
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"></body>
+</html>
