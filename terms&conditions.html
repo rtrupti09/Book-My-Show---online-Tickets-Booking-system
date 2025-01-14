@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMyShow</title>
+  <link rel="icon" type="image/png" href="Images/my.jpg">
+  <!-- Bootstrap CSS -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+>  <style>
+    /* General Styles */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #e72b38;
+    }
+
+    .nav-link {
+      color: #000;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #e72b38;
+    }
+
+    .search-bar {
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .btn-signin {
+      background-color: #e72b38;
+      color: #fff;
+    }
+
+    .btn-signin:hover {
+      background-color: #d22632;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    /* Small screen adjustments */
+    @media (max-width: 991px) {
+      .navbar-brand img {
+        height: 30px;
+      }
+    }
+
+    /* Apply padding to the container for all screen sizes */
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+h2, h3 {
+  color: #ff3333;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+.text-dan{
+ color: #ff3333;
+ font: bold;
+}
+
+/* Header and Footer Styling */
+header, footer {
+  background-color: #ff3333;
+}
+
+footer p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+  /* footer */
+  .footer {
+            background-color: #000;
+            color: #fff;
+        }
+        .footer a {
+            color: #ff3333;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .social-links a {
+            font-size: 1.5rem;
+            color: #ff3333;
+        }
+        .social-links a {
+            color: #fff;
+        }
+        .footer h5 {
+            color: #ff3333;
+        }
+        .footer .phone {
+            color: #ff3333;
+        }
+        .footer .para{
+          color: #ff3333;
+        }
+
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="Images/BookMyshowlogo.png" alt="BookMyShow Logo">
+          </a>
+    
+          <!-- Toggler Button for Small Screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Navbar Content -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Navigation Links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="movies.html">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="stream.html">Streams</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="plays.html">Plays</a>
+              </li>
+            </ul>
+    
+            <!-- Search Bar -->
+            <form class="d-none d-lg-flex mb-2 mb-lg-0 search-bar">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search for Movies, Events, Plays"
+                aria-label="Search"
+              >
+            </form>
+    
+            <!-- Sign In and Login Buttons -->
+            <div class="d-flex">
+              <a href="signin.html" class="btn btn-signin me-2">Sign In</a>
+              <a href="login.html" class="btn btn-signin">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+      <h1 style="text-align: center; margin-top: 20px"><strong>Terms and Conditions</strong></h1>
+    </div>
+
+  <main class="container py-5">
+    <section class="content">
+      <h2 class="text-dan">Introduction</h2>
+      <p>Welcome to BookMyShow. These Terms and Conditions govern your use of our website and services. By accessing or using our services, you agree to be bound by these terms.</p>
+
+      <h2 class="text-dan">Use of Services</h2>
+      <p>By using BookMyShow, you agree to use the services solely for lawful purposes. You may not misuse our services or engage in any unlawful activity.</p>
+
+      <h2 class="text-dan">Account Responsibility</h2>
+      <p>You are responsible for maintaining the confidentiality of your account information, including your username and password. You agree to notify us immediately of any unauthorized access to your account.</p>
+
+      <h2 class="text-dan">Payment and Transactions</h2>
+      <p>All payments for services, such as ticket purchases, are subject to the payment terms set by BookMyShow and its partners. You agree to comply with these terms when making transactions on our platform.</p>
+
+      <h2 class="text-dan">Cancellation and Refund Policy</h2>
+      <p>Our cancellation and refund policy is provided at the time of booking. Please refer to this policy for detailed information on how cancellations and refunds are handled.</p>
+
+      <h2 class="text-dan">Content Ownership</h2>
+      <p>The content available on our platform, including text, graphics, images, logos, and videos, is the property of BookMyShow or its licensors and is protected by copyright laws.</p>
+
+      <h2 class="text-dan">Prohibited Activities</h2>
+      <p>You agree not to engage in any activity that may harm, disable, or disrupt the services, including hacking, spreading malware, or violating the intellectual property rights of others.</p>
+
+      <h2 class="text-dan">Limitation of Liability</h2>
+      <p>BookMyShow is not liable for any damages resulting from the use of our services. We provide the platform on an "as-is" basis and do not make any warranties or representations regarding its availability or reliability.</p>
+
+      <h2 class="text-dan">Indemnification</h2>
+      <p>You agree to indemnify and hold harmless BookMyShow, its employees, and affiliates from any claims, losses, or damages arising from your use of our services.</p>
+
+      <h2 class="text-dan">Changes to Terms and Conditions</h2>
+      <p>We may update these terms from time to time. Any changes will be posted on this page, and the updated date will be noted. Please check periodically for any updates.</p>
+
+      <h2 class="text-dan">Contact Us</h2>
+      <p>If you have any questions or concerns regarding our terms and conditions, please contact us at support@bookmyshow.com.</p>
+    </section>
+  </main>
+
+  <!-- footer section -->
+  <footer class="footer pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-light">About BookMyShow</h5>
+                <p class="para">BookMyShow is your go-to platform for booking tickets for movies, events, and more.</p>
+            </div>
+                <!-- Contact Section -->
+                <div class="col-md-4 mb-3">
+                  <h5 class="text-light">Contact Us</h5>
+                  <p>Email: <a href="mailto:support@bookmyshow.com">support@bookmyshow.com</a></p>
+                  <p >Phone: <span class="phone">+91 7821947552</span> </p>
+                  <div class="social-links">
+                      <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                      <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-whatsapp"></i></a>
+                  </div>
+              </div>
+            <!-- Quick Links Section -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-light">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        
+        </div>
+        <hr class="bg-light">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2025 BookMyShow. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+  
+  <!-- Bootstrap JS (Optional) -->
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"></body>
+</html>
